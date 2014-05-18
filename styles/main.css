@@ -1,9 +1,5 @@
-.menu a {
-	color: #999;
-}
-
-.menu a:hover {
-	color: #111;
+h1, h2, h3, h4, h5, h6 {
+	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
 }
 
 ul {
@@ -14,3 +10,95 @@ ul {
 li {
 	display: inline;
 }
+
+a, a:link, a:hover, a:active, a:visited {
+	color: #333;
+}
+
+hr {
+	border-width: 0.35em 0 0;
+	margin: 0 .75em 0.8em;
+	border-color: black;
+}
+
+.top {
+	height: 10em;
+	margin-bottom: 3em;
+}
+
+.menu {
+	margin-top: 9em;
+	text-align: right;
+}
+
+.menu a {
+	color: #999;
+	padding-right: .75em;
+	padding-left: .75em;
+}
+
+.menu a:hover {
+	color: #111;
+}
+
+.project {
+	overflow: hidden;
+	height: 200px;
+	position: relative;
+}
+
+.project-link > div {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 200px;
+	width: 100%;
+}
+
+.grayscale-cover {
+	background-color: #ccc;
+	opacity: 0.05;
+	z-index: 3;
+	transition: all 150ms;
+}
+
+.project-text {
+	position: absolute;
+	text-align: center;
+	margin-top: 3em;
+	z-index: 2;
+	opacity: 0;
+	transition: all 150ms;
+}
+
+.project-link:hover > .grayscale-cover {
+	opacity: 0.15;
+}
+
+.project-link:hover > .project-text {
+	opacity: 1;
+}
+
+.project-text > h3 {
+	display: inline-block;
+	text-transform: uppercase;
+	background-color: #cef6ff;
+	font-size: 1.75em;
+	line-height: 1.75em;
+	padding: 0.03em 0.2em 0;
+}
+
+
+.project-text > span {
+	font-size: 0.85em;
+	background-color: #cef6ff;
+	font-style: italic;
+	margin: 0 0.2em;
+	line-height: 1.475em;
+	padding: 0.03em 0.2em 0;
+}
+
+.image-wrap {
+	z-index: 1;
+}
+
