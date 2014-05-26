@@ -2,3 +2,4 @@ notes
 .*
 !.gitignore
 _site
+images/raw

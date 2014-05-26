@@ -60,12 +60,12 @@ hr {
 	position: absolute;
 	left: 0;
 	top: 0;
-	height: 200px;
+	height: 100%;
 	width: 100%;
 }
 
 .grayscale-cover {
-	background-color: #f9f9f9;
+	background-color: #ddd;
 	opacity: 0.05;
 	z-index: 2;
 	transition: all 400ms;
@@ -74,14 +74,14 @@ hr {
 .project-text {
 	position: absolute;
 	text-align: center;
-	margin-top: 3em;
+	margin-top: 1.5em;
 	z-index: 3;
 	opacity: 0;
 	transition: all 400ms;
 }
 
 .project-link:hover > .grayscale-cover {
-	opacity: 0.6;
+	opacity: 0.5;
 }
 
 .project-link:hover > .project-text {
@@ -91,7 +91,7 @@ hr {
 .project-text > h3 {
 	display: inline;
 	text-transform: uppercase;
-	background-color: #cef6ff;
+	background-color: #539ACB;
 	font-size: 1.75em;
 	line-height: 1.75em;
 	padding: 0.03em 0.2em 0;
@@ -100,7 +100,7 @@ hr {
 
 .project-text > span {
 	font-size: 0.85em;
-	background-color: #cef6ff;
+	background-color: #539ACB;
 	font-style: italic;
 	margin: 0 0.2em;
 	line-height: 1.475em;
@@ -113,6 +113,7 @@ hr {
 
 .project-link > .image-wrap {
 	position: static;
+        height: 70%;
 }
 
 .project-image {
@@ -130,27 +131,59 @@ hr {
 }
 
 
+/* article page styling */
+#article-content > .column {
+        margin-bottom: 5em;
+}
 
-@media (max-width: 90em) {
-	.project-link > div {
-		height: 200px;
-	}
+#article-content img {
+        width: 100%;
+        padding: 1.25em 0.5em 2.5em;
+}
+
+@media (max-width: 3000px) {
+        #article-content img {
+                padding: 1.25em 20% 2.5em;
+        }
+}
+
+/* TODO fix media query */
+/* when at two 6 medium column, last images needs to float left */
+/*floating text font needs adjustment*/
+@media (min-width: 968px) and (max-width: 1024px) {
+        .project-text > h3 {
+                font-size: 2.25em;
+        }
+        .project-text > span {
+                font-size: 1.2em;
+        }
+}
+
+@media (max-width: 1024px) {
+        #article-content img {
+                padding: 1.25em 0.5em 2.5em;
+        }
+
 }
 
 
-
-@media (max-width: 64.063em) {
+@media (max-width: 640px) {
 	.project-link > div {
-		height: 200px;
+		padding: 0 16%;
+                margin-bottom: 3em;
 	}
 
-}
+        #article-container > .projects {
+                display: none;
+        }
 
-@media (max-width: 400px) {
+        #article-content img {
+                padding: 1.25em 0.5em 2.5em;
+        }
+}
+@media (max-width: 480px) {
 	.project-link > div {
 		padding: 0 8%;
-		height: 100%;
-		overflow: hidden;
+                margin-bottom: 3em;
 	}
-
 }

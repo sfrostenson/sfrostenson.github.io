@@ -4,8 +4,15 @@
         <body>
                 {% include menu.html %}
 
-                {{content}}
+                <div id="article-container">
+                        <div id="article-content">
+                                <div class="small-10 small-offset-1 medium-7 medium-offset-2 column">
 
-                {% include projects.html %}
+                                        {{ content }}
+                                </div>
+                        </div>
+
+                        {% include projects.html %}
+                </div>
         </body>
 </html>
