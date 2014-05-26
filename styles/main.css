@@ -65,23 +65,23 @@ hr {
 }
 
 .grayscale-cover {
-	background-color: #ccc;
+	background-color: #f9f9f9;
 	opacity: 0.05;
-	z-index: 3;
-	transition: all 150ms;
+	z-index: 2;
+	transition: all 400ms;
 }
 
 .project-text {
 	position: absolute;
 	text-align: center;
 	margin-top: 3em;
-	z-index: 2;
+	z-index: 3;
 	opacity: 0;
-	transition: all 150ms;
+	transition: all 400ms;
 }
 
 .project-link:hover > .grayscale-cover {
-	opacity: 0.15;
+	opacity: 0.6;
 }
 
 .project-link:hover > .project-text {
@@ -89,7 +89,7 @@ hr {
 }
 
 .project-text > h3 {
-	display: inline-block;
+	display: inline;
 	text-transform: uppercase;
 	background-color: #cef6ff;
 	font-size: 1.75em;
@@ -118,6 +118,17 @@ hr {
 .project-image {
 	width: 100%;
 }
+
+.pattern-cover {
+        background: url(../patterns/crosses/crosses.png) repeat;
+	transition: all 400ms;
+        opacity: 0;
+}
+
+.project-link:hover > .pattern-cover {
+        opacity: 0.5;
+}
+
 
 
 @media (max-width: 90em) {
