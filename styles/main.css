@@ -41,9 +41,18 @@ hr {
 	color: #111;
 }
 
+.projects > .project:last-child {
+	float: left;
+}
+
 .project {
 	overflow: hidden;
-	height: 200px;
+	position: relative;
+	margin-bottom: 2em;
+}
+
+.project-link {
+	display: block;
 	position: relative;
 }
 
@@ -102,3 +111,35 @@ hr {
 	z-index: 1;
 }
 
+.project-link > .image-wrap {
+	position: static;
+}
+
+.project-image {
+	width: 100%;
+}
+
+
+@media (max-width: 90em) {
+	.project-link > div {
+		height: 200px;
+	}
+}
+
+
+
+@media (max-width: 64.063em) {
+	.project-link > div {
+		height: 200px;
+	}
+
+}
+
+@media (max-width: 400px) {
+	.project-link > div {
+		padding: 0 8%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+}
