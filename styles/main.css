@@ -145,14 +145,10 @@ hr {
 	color: #4183c4;
 }
 
-#article-content .caption{
-	color: #888;
-	font-variant: italic
-}
 
 @media (max-width: 3000px) {
         #article-content img {
-                padding: 1.25em 20% 2.5em;
+                /*padding: 1.25em 20% 2.5em;*/
         }
 }
 
