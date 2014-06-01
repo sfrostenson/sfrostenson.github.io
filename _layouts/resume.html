@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+        {% include header.html %}
+        <body>
+                {% include menu.html %}
+
+                <div id="resume-container">
+                        <div id="resume-content">
+                                <div class="small-10 small-offset-1 medium-7 medium-offset-2 column">
+
+                                        {{ content }}
+                                </div>
+                        </div>
+
+                        {% include projects.html %}
+                </div>
+        </body>
+</html>

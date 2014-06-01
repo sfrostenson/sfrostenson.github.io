@@ -91,7 +91,7 @@ hr {
 .project-text > h3 {
 	display: inline;
 	text-transform: uppercase;
-	background-color: #fff480;
+	background-color: #81c0ff;
 	font-size: 1.75em;
 	line-height: 1.75em;
 	padding: 0.03em 0.2em 0;
@@ -100,7 +100,7 @@ hr {
 
 .project-text > span {
 	font-size: 0.85em;
-	background-color: #fff480;
+	background-color: #81c0ff;
 	font-style: italic;
 	margin: 0 0.2em;
 	line-height: 1.475em;
