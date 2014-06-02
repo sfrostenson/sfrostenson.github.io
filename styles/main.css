@@ -1,13 +1,11 @@
-<<<<<<< HEAD
+
 h2, h3, h4, h5, h6 {
-=======
+
 h2, h3, h4, h5 {
->>>>>>> cefe4c936c35cfe56f05ae10ee53e8a3f35d0522
 	font-family: Oswald, "Helvetica Neue", Arial, sans-serif;
 }
 
 h1 {
-<<<<<<< HEAD
 	font-family: Georgia;
 	font-weight: 700;
 	font-size: 2em;
@@ -21,11 +19,10 @@ h1 {
 
 ul {
 	font-family: Raleway, "Helvetica Neue" Arial, sans-serif;
-=======
-        font-size: 3em;
-        line-height: 1.275em;
+	font-size: 3em;
+	line-height: 1.275em;
 	font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
-        color: #333;
+    color: #333;
 }
 
 #sarah {
@@ -52,7 +49,6 @@ h2 {
 
 .menu ul {
 	font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
->>>>>>> cefe4c936c35cfe56f05ae10ee53e8a3f35d0522
 	list-style: none;
 }
 
