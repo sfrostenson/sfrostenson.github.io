@@ -2,10 +2,6 @@ h2, h3, h4, h5 {
 	font-family: Oswald, "Helvetica Neue", Arial, sans-serif;
 }
 
-h6 {
-
-}
-
 h1 {
         font-size: 3em;
         line-height: 1.275em;
@@ -24,6 +20,10 @@ h2 {
         font-family: "Open Sans";
         font-weight: 300;
         color: #333;
+}
+
+.menu h2 {
+        font-weight: 300;
 }
 
 .red {
