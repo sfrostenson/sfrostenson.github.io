@@ -3,15 +3,10 @@ h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-family: Georgia;
+	font-family: Raleway, "Helvetica Neue" Arial, sans-serif;
 	font-weight: 700;
 	font-size: 2em;
 	color: #444;
-}
-
-#sarah {
-	margin-top: 8em;
-
 }
 
 ul {
