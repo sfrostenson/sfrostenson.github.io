@@ -39,6 +39,7 @@ h2 {
 }
 
 .menu ul {
+	font-size: 1.0em;
 	font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
 	list-style: none;
 }
@@ -208,10 +209,16 @@ hr {
 
 #resume-content ul {
 	list-style: disc;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 2em;
+	font-color:#222222;
+	line-height: 1.75;
+
 }
 
 #resume-content li {
 	display: list-item;
+	font-size: 0.5em;
 }
 
 
