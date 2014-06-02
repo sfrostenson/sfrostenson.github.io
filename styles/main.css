@@ -1,9 +1,21 @@
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
 	font-family: Oswald, "Helvetica Neue", Arial, sans-serif;
 }
 
+h1 {
+	font-family: Georgia;
+	font-weight: 700;
+	font-size: 2em;
+	color: #444;
+}
+
+#sarah {
+	margin-top: 8em;
+
+}
+
 ul {
-	font-family: raleway;
+	font-family: Raleway, "Helvetica Neue" Arial, sans-serif;
 	list-style: none;
 }
 
