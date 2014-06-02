@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 h2, h3, h4, h5, h6 {
+=======
+h2, h3, h4, h5 {
+>>>>>>> cefe4c936c35cfe56f05ae10ee53e8a3f35d0522
 	font-family: Oswald, "Helvetica Neue", Arial, sans-serif;
 }
 
 h1 {
+<<<<<<< HEAD
 	font-family: Georgia;
 	font-weight: 700;
 	font-size: 2em;
@@ -16,6 +21,38 @@ h1 {
 
 ul {
 	font-family: Raleway, "Helvetica Neue" Arial, sans-serif;
+=======
+        font-size: 3em;
+        line-height: 1.275em;
+	font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
+        color: #333;
+}
+
+#sarah {
+        margin-top: 4em;
+        display: inline-block;
+}
+
+h2 {
+        font-size: 1.5em;
+        line-height: 1.5em;
+        font-family: "Open Sans";
+        font-weight: 300;
+        color: #333;
+}
+
+.menu h2 {
+        font-weight: 300;
+}
+
+.red {
+        color: #ff00bf;
+        font-weight: 500;
+}
+
+.menu ul {
+	font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
+>>>>>>> cefe4c936c35cfe56f05ae10ee53e8a3f35d0522
 	list-style: none;
 }
 
@@ -36,6 +73,7 @@ hr {
 .top {
 	height: 10em;
 	margin-bottom: 3em;
+        position: relative;
 }
 
 .menu {
@@ -47,10 +85,32 @@ hr {
 	color: #999;
 	padding-right: .75em;
 	padding-left: .75em;
+        font-size: 1em;
 }
 
 .menu a:hover {
 	color: #111;
+}
+
+/* icons */
+.icon {
+        display: inline-block;
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        top: 2em;
+}
+
+.twitter {
+        background: url(../images/icon/twitter_256px.png) center center no-repeat;
+        background-size: 100%;
+        right: 2em;
+}
+
+.github {
+        background: url(../images/icon/github_64px.png) center center no-repeat;
+        background-size: 100%;
+        right: 5.25em;
 }
 
 .projects > .project:last-child {
@@ -153,32 +213,46 @@ hr {
         padding: 1.25em 0.5em 2.5em;
 }
 
+#resume-content a,
+#contact-content a,
 #article-content a{
 	color: #4183c4;
 }
+
+#resume-content ul {
+        list-style: disc;
+}
+
+#resume-content li {
+        display: list-item;
+}
+
+
 
 
 @media (max-width: 3000px) {
         #article-content img {
                 /*padding: 1.25em 20% 2.5em;*/
         }
-}
-
-/* TODO fix media query */
-/* when at two 6 medium column, last images needs to float left */
-/*floating text font needs adjustment*/
-@media (min-width: 968px) and (max-width: 1024px) {
-        .project-text > h3 {
-                font-size: 2.25em;
-        }
-        .project-text > span {
-                font-size: 1.2em;
+        .menu a {
+            font-size: 1.2em;
         }
 }
 
 @media (max-width: 1024px) {
         #article-content img {
                 padding: 1.25em 0.5em 2.5em;
+        }
+        .menu a {
+            font-size: 1em;
+        }
+}
+
+@media (max-width: 922px) {
+        .project:nth-child(odd):after {
+                content: '';
+                display: block;
+                clear: both;
         }
 
 }
@@ -197,10 +271,16 @@ hr {
         #article-content img {
                 padding: 1.25em 0.5em 2.5em;
         }
+        .menu {
+                margin-top: 1em;
+        }
 }
 @media (max-width: 480px) {
 	.project-link > div {
 		padding: 0 8%;
                 margin-bottom: 3em;
 	}
+        .menu {
+                margin-top: 1em;
+        }
 }
