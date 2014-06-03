@@ -1,4 +1,4 @@
-frostenson.github.com
+sfrostenson.github.io
 =====================
 
-personal website
+personal website frostenson.com
