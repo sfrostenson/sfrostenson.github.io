@@ -1,6 +1,6 @@
 name: Sarah Frostenson
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 exclude:
     - README.md
     - LICENSE
