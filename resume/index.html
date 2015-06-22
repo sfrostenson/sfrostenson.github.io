@@ -38,8 +38,11 @@ var fill = d3.scale.ordinal()
 
 var nodes = [];
 var labels = [];
+
+var containerWidth = $('#force-bubbles').width();
+
 // positioning of the 3 node groupings
-var foci = [{x: 0, y: 100}, {x: 350, y: 100}, {x: 200, y: 100}];
+var foci = [{x: containerWidth/7 * 2, y: 150}, {x: containerWidth/7 * 6, y: 150}, {x: containerWidth/7 * 4, y: 150}];
 
 var svg = d3.select("#force-bubbles").append("svg");
 
@@ -112,10 +115,11 @@ d3.selection.prototype.moveToFront = function() {
 };
 
 function resize() {
-    var width = window.innerWidth;
-    var height = window.innerHeight;
+    var width = $('#force-bubbles').width();
+    var height = 400;
     svg.attr("width", width)
         .attr("height", height);
+    foci = [{x: width/7 * 2, y: 150}, {x: width/7 * 6, y: 150}, {x: width/7 * 4, y: 150}];
     force.size([width, height]).resume();
   }
 

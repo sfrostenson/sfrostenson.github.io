@@ -271,8 +271,7 @@ circle {
 #force-bubbles {
 	position: relative;
   	width: 100%;
-	height: 450px;
-	margin-top: -80px;
+	background-color: antique-white;
 }
 
 @media (max-width: 3000px) {
