@@ -69,7 +69,7 @@ hr {
 	color: #999;
 	padding-right: .75em;
 	padding-left: .75em;
-	font-size: 1em;
+	font-size: 1.1em;
 }
 
 .menu a:hover {
@@ -166,6 +166,7 @@ hr {
 
 .project-text > span {
 	font-size: 0.85em;
+	color: #222222;
 	background-color: #81c0ff;
 	font-style: italic;
 	margin: 0 0.2em;
@@ -247,49 +248,22 @@ hr {
 	font-size: 0.5em;
 }
 
-.node {
-  	stroke-width: 1.5px;
-}
-
-.node:hover circle {
-  	opacity: 0.6;
-}
-
-text {
-	  font-family: Raleway, "Helvetica Neue" Arial, sans-serif;
-	  text-anchor: middle;
-	  pointer-events: none;
-	  fill: white;
-}
-
-circle {
-	fill: #ccc;
-  	stroke: white ;
-  	stroke-width: 2px;
-}
-
-#force-bubbles {
-	position: relative;
-  	width: 100%;
-	background-color: antique-white;
-}
-
-@media (max-width: 3000px) {
+/* MEDIA QUERIES */
+@media (max-width: 1025px) {
         #article-content img {
-                /*padding: 1.25em 20% 2.5em;*/
+            padding: 1.25em 0.5em 2.5em;
         }
-        .menu a {
-            font-size: 1.0em;
-        }
-}
-
-@media (max-width: 1024px) {
-        #article-content img {
-                padding: 1.25em 0.5em 2.5em;
-        }
-        .menu a {
-            font-size: 1em;
-        }
+        .project-link > div {
+			width: 88%;
+		}
+		.project-text > h3 { 
+			font-size: 1.85em;
+		 }
+		.project-text > span {font-size: 1em; }
+		hr {
+			margin: 1em 0;
+		}
+	
 }
 
 @media (max-width: 922px) {
@@ -298,35 +272,96 @@ circle {
                 display: block;
                 clear: both;
         }
+        .project-link > div {
+			width: 95%;
+		}
+		.menu a {
+            font-size: 1em;
+        }
 
 }
 
+@media (max-width: 720px) {
+		.project-text > h3 { 
+			font-size: 1.75em;
+		 }
+		.project-text > span {font-size: 0.8em; }
+		hr {
+			margin: 0 .75em 0.8em;
+		}
+
+}
+
+@media (max-width: 674px) {
+	.menu a {
+		padding-right: .68em;
+		padding-left: .68em;
+		font-size: 0.95em;
+	}
+}
 
 @media (max-width: 640px) {
 	.project-link > div {
-		padding: 0 16%;
-                margin-bottom: 3em;
+		margin-left: 25px;
+		width: 75%;
+        margin-bottom: 3em;
 	}
 
-        #article-container > .projects {
-                display: none;
-        }
+    #article-container > .projects {
+        display: none;
+    }
 
-        #article-content img {
-                padding: 1.25em 0.5em 2.5em;
-        }
-        .menu {
-                margin-top: 1em;
-        }
+    #article-content img {
+        padding: 1.25em 0.5em 2.5em;
+    }
+    .menu {
+        margin-top: 1em;
+    }
+
+    .project-text > h3 { 
+		font-size: 1.85em;
+	}
+	.project-text > span {font-size: 1em; }
+	hr {
+		margin: 1em 0;
+	}
 
 }
 
-@media (max-width: 480px) {
-	.project-link > div {
-		padding: 0 8%;
-                margin-bottom: 3em;
+@media (max-width: 520px) {
+	.project-text > h3 { 
+			font-size: 1.75em;
+		 }
+	.project-text > span {font-size: 0.8em; }
+	hr {
+		margin: 0 .75em 0.8em;
 	}
-        .menu {
-                margin-top: 1em;
-        }
+
+	.project-link > .grayscale-cover,
+	.project-link > .pattern-cover {
+		opacity: 0.5;
+	}
+
+	.project-link > .project-text {
+		opacity: 1;
+	}
+	.menu a {
+    	font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+	.project {
+		margin-bottom: 0;
+	}
+    .menu {
+    	margin-top: 1em;
+    	float: left;
+    }
+    .menu a {
+    	font-size: 1.1em;
+    }
+    #sarah {
+    	padding-top: 10px;
+    }
 }

@@ -1,0 +1,39 @@
+#force-bubbles {
+	position: relative;
+  	width: 100%;
+}
+
+h2.force-bubbles-title {
+	text-align: left;
+	padding-left: 15%;
+	padding-top: 10px;
+	font-family: Raleway;
+}
+
+.node {
+  	stroke-width: 1.5px;
+}
+
+.node:hover circle {
+  	opacity: 0.6;
+}
+
+text {
+	font-family: Raleway, "Helvetica Neue" Arial, sans-serif;
+	text-anchor: middle;
+	pointer-events: none;
+	fill: white;
+}
+
+circle {
+	fill: #ccc;
+  	stroke: white ;
+  	stroke-width: 2px;
+}
+
+@media (max-width: 550px) {
+	h2.force-bubbles-title {
+		font-size: 20px;
+		padding-left: 12%;
+	}
+}
