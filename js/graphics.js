@@ -3,23 +3,25 @@ var data = [
   {"id": 0, "name": "HTML/CSS", "r": 50 },
   {"id": 0, "name": "JS/jQuery", "r": 50 },
   {"id": 0, "name": "D3", "r": 40 },
-  {"id": 0, "name": "Responsive Design", "r": 40 },
-  {"id": 0, "name": "Backbone", "r": 32 },
+  {"id": 0, "name": "Responsiveness", "r": 40 },
+  {"id": 0, "name": "Backbone", "r": 35 },
   {"id": 0, "name": "Lodash", "r": 50 },
   {"id": 0, "name": "Mapbox/Leaflet", "r": 50 },
+  {"id": 0, "name": "Sketch", "r": 30 },
+  {"id": 0, "name": "Photoshop", "r": 30 },
 
   {"id": 1, "name": "gulp", "r": 50 },
   {"id": 1, "name": "browserify", "r": 50 },
   {"id": 1, "name": "sass", "r": 50 },
   {"id": 1, "name": "git", "r": 50 },
   {"id": 1, "name": "npm", "r": 50 },
-  {"id": 1, "name": "makefiles", "r": 50 },
 
   {"id": 2, "name": "node", "r": 40 },
   {"id": 2, "name": "django", "r": 32 },
   {"id": 2, "name": "python", "r": 50 },
   {"id": 2, "name": "PostgreSQL", "r": 50 },
   {"id": 2, "name": "PostGIS/GDAL", "r": 50 },
+  {"id": 2, "name": "Makefiles", "r": 50 },
 ];
 
 // TO DO: make responsive
@@ -114,11 +116,11 @@ d3.selection.prototype.moveToFront = function() {
 
 function resize() {
     var width = $('#force-bubbles').width();
-    var height = 400;
+    var height = $('#force-bubbles').height();
     var charge = ($('#force-bubbles').width() < 550) ? -180 : -450;
     svg.attr("width", width)
         .attr("height", height);
-    foci = [{x: width/7 * 2, y: 150}, {x: width/7 * 6, y: 150}, {x: width/7 * 4, y: 150}];
+
     force.charge(charge);
     force.size([width, height]).resume();
 
