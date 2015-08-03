@@ -248,6 +248,14 @@ hr {
 	font-size: 0.5em;
 }
 
+.portfolio {
+	text-align: center;
+	font-family: Raleway,"Helvetica Neue",Helvetica,sans-serif;
+	color: #999;
+	padding-bottom: 20px;
+
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 1025px) {
         #article-content img {
