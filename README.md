@@ -14,4 +14,4 @@ TO-DO:
 4. build interactive timeline
 5. update project pages w/ alt for images
 6. update website google search to Sarah Frostenson
-7. test experience on ipad
+7. test experience on ipad (added for test)
